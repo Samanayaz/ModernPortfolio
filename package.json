@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Saman Portofolio Website",
   "main": "index.js",
-  "homepage": "https://samanayaz.github.io/my_porfolio",
+  "homepage": "https://samanayaz.github.io/saman_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"

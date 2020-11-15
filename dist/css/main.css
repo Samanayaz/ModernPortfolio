@@ -128,7 +128,7 @@ body {
   line-height: 1.5;
 }
 body#bg-img {
-  background: url(../img/background.jpg);
+  background: url(../img/Study.JPG);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -138,11 +138,25 @@ body#bg-img:after {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
+  z-index: -1;
+  background: rgba(68, 68, 68, 0.9);
+}
+.about-bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 193%;
   z-index: -1;
   background: rgba(68, 68, 68, 0.9);
 }
 
+.vector img {
+  width: 700px;
+  float: right;
+}
 h1,
 h2,
 h3 {
@@ -161,6 +175,12 @@ h3.sm-heading {
   padding: 0.2rem 1rem;
   background: rgba(73, 73, 73, 0.5);
   /* background-size: 100%; */
+}
+.front h3 {
+  color: lightgrey;
+  padding-left: 1em;
+  margin-top: -2em;
+  margin-bottom: 2em;
 }
 
 a {
@@ -221,14 +241,16 @@ main#home h1 {
 .about-info .job-2 {
   grid-area: job2;
 }
-/* .about-info .job-3 {
+.about-info .job-3 {
   grid-area: job3;
-} */
+}
+
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #69c2c2 5px solid;
 }
+
 
 .projects {
   display: grid;
@@ -244,6 +266,12 @@ main#home h1 {
   opacity: 0.5;
   border-color: #69c2c2;
   transition: all 0.5s ease-out;
+}
+
+.uiux img {
+  width: 500px;
+  height: 300px;
+  border: 3px #fff solid;
 }
 
 .boxes {
@@ -269,9 +297,67 @@ main#home h1 {
   color: #000;
 }
 
+.maymooth img {
+  width: 100%;
+  height: 1200px;
+}
+
+.slides,
+.sitemap {
+  display: flex;
+  justify-content: center;
+}
+
+.slides img {
+  width: 60%;
+}
+.sitemap img {
+  width: 70%;
+}
+.shuflow img {
+  width: 90%;
+}
+.maybody {
+  background-color: #e8e9ea;
+  align-items: center;
+}
+.mock img {
+  width: 50%;
+  /* display: inline; */
+  align-items: center;
+}
+.mock {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0 3em 0;
+}
+
+/* .mayweb {
+  padding-top: 3em;
+}
+
+.mayweb,
+.mayshop {
+  display: flex;
+  justify-content: center;
+}
+
+.mayweb,
+.mayshop div {
+  padding: 2em;
+}
+.mayapp {
+  display: flex;
+  justify-content: center;
+  padding: 4em 0 10em 0;
+}
+.mayapp div {
+  padding: 0.5em;
+} */
 .btn,
 .btn-dark,
-.btn-light {
+.btn-light,
+.btn-lighter {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -279,6 +365,7 @@ main#home h1 {
 }
 .btn:hover,
 .btn-dark:hover,
+.btn-lighter:hover,
 .btn-light:hover {
   background: #69c2c2;
   color: #000;
@@ -301,16 +388,312 @@ main#home h1 {
   color: #fff;
   height: 60px;
 }
+.timeline div {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+}
+.sketch img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+.persona {
+  display: grid;
+  column-gap: -3em;
+  padding: 1em;
+}
+.wireframe,
+.sketch .interface img {
+  width: 100%;
+}
+.persona h5 {
+  padding-left: -2em;
+}
 
+.savorbody h1,
+h2 {
+  color: #e79f19;
+}
+.savorbody h3,
+h4 {
+  color: #addbd0;
+}
+
+.shupabody h1,
+h2 {
+  color: rgb(174, 127, 236);
+}
+.shupabody h3,
+h4 {
+  color: rgb(197, 234, 255);
+}
+.studybody h2 {
+  color: rgb(235, 21, 103);
+}
+.studybody h3 {
+  color: rgb(217, 235, 140);
+}
+
+.target div {
+  padding: 0.5em;
+}
+
+.sketch img {
+  padding: 1em;
+}
+.hero img {
+  width: 100%;
+}
+.hero-study img {
+  width: 100%;
+}
+.shupa img {
+  height: 600px;
+  border: rgba(126, 171, 199, 0.4) solid 2em;
+  border-right: 5em;
+  border-left: 5em;
+  padding: 0 11em 0 11em;
+}
+
+/* .savor,
+.concept,
+.target,
+.research,
+.needs,
+.play {
+  margin: 2em 9em 0 9em;
+  padding: 1em;
+} */
+.fullbody p {
+  text-indent: 1em;
+}
+
+
+.timeline {
+  text-align: center;
+}
+.play div {
+  padding-top: 2em;
+}
+.play div img {
+  width: 100%;
+} 
+.shubox2,
+.shuwireframe,
+.shumap,
+.post-pal img {
+  width: 70%;
+}
+.study-final img {
+  width: 100%;
+}
+.study-survey div img {
+  width: 80%;
+}
+.front h3,
+h4 {
+  color: lightgrey;
+}
+
+.sm-heading {
+  color: white;
+}
+
+@media (min-width: 1700px) {
+  .person div {
+    display: grid;
+    justify-content: space-evenly;
+
+    /* grid-template-columns: 3fr repeat(minmax(auto, 15em)) 3fr; */
+  }
+  .journey .wireframe,
+  .sketch img {
+    display: flex;
+    justify-self: center;
+    padding-left: 8em;
+    width: 80%;
+  }
+  .journey div {
+    padding-left: 4em;
+  }
+  .interface img {
+    margin-right: em;
+  }
+  .shupa img {
+    height: 44em;
+  }
+  .fullbody div{
+    margin: 0 4em;
+  }
+ 
+  .hero-study img {
+    height: 44em;
+  }
+  .sur1,
+  .sur2,
+  .sur3,
+  .sur4 {
+    display: flex;
+  }
+  .sur1 div,
+  .sur2 div,
+  .sur3 div,
+  .sur4 div {
+    margin: 2em;
+    /* border: solid grey; */
+  }
+  .person {
+    margin: 0 9em 0 9em;
+    display: grid;
+  }
+  .fullbody, .shupabody {
+    margin: 0 13em;
+  }
+}
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+  .uiux {
+    display: flex;
+    justify-content: center;
+  }
 
+  .uiux .items {
+    padding: 3em;
+  }
+
+  .vector img {
+    width: 700px;
+    padding-top: -4em;
+  }
+  .persona {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+  }
+  .persona div {
+    padding-left: 2em;
+    align-items: center;
+  }
+  .front {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .play div img {
+    align-items: center;
+    margin: 0 6rem 0 6rem;
+  }
+  .play video {
+    align-items: center;
+    margin-left: 33em;
+    padding: 4em;
+  }
+  .wireframe,
+  .sketch .interface img {
+    width: 100%;
+  }
+  .video video {
+    width: 30%;
+    padding: 2em;
+  }
+  .shubox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7em;
+  }
+  .shu-timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-auto-flow: dense;
+  }
+  .shubox2 img {
+    width: 25em;
+  }
+  .fullbody {
+    margin: 0 13em;
+  }
+  .shuflow {
+    width: 50%;
+  }
+  .play div img {
+    width: 60%;
+  }
+  /* .job img{
+    width: 550px;
+    height: 400px;
+  }
+  .job {
+    font-size: 12px;
+  } */
+}
+@media screen and (min-width: 1170px) and (max-width: 1500px){
+  .job img{
+    width: 350px;
+    height: 250px;
+  }
+  .job {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .uiux .items {
+    padding: 3em;
+  }
+  .vector img {
+    width: 630px;
+    float: right;
+    padding: 4em;
+  }
+  .persona {
+    display: grid;
+    grid-template-columns: 3fr;
+    column-gap: -3em;
+  }
+  .fullbody {
+    margin: 0 3em 0 3em;
+    text-align: start;
+    padding: 0 3em 0 3em;
+  }
+  .fullbody img {
+    justify-content: center;
+  }
+  /* .savorbody div {
+    padding: 5em;
+  } */
+  .wireframe,
+  .sketch .interface img {
+    width: 100%;
+  }
+  .journey div img {
+    width: 100%;
+  }
+  .video video {
+    width: 50%;
+    padding: 2em;
+  }
+  .shubox2 img {
+    width: 35em;
+  }
+  /* .certificate {
+    display: grid;
+    grid-template-columns: 60px 60px;
+  } */
+  .job img{
+    width: 200px;
+    height: 150px;
+  }
+  .job {
+    font-size: 12px;
   }
 }
 
@@ -342,6 +725,7 @@ main#home h1 {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
   }
+
   .menu-branding .portrait {
     background: url("../img/portrait_small.jpg");
     width: 150px;
@@ -353,6 +737,30 @@ main#home h1 {
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .uiux .items {
+    padding: 2em;
+  }
+  .vector img {
+    width: 500px;
+    float: center;
+    padding: 4em;
+  }
+  .timeline div {
+    display: inline;
+    padding: 1em;
+  }
+  /* .persona {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(auto, 15em)); */
+    grid-template-columns: 1fr;
+    column-gap: -3em;
+  } */
+  .shupa img {
+    padding: 0em;
+  }
+  .fullbody {
+    margin: 0 4em;
   }
 }
 
@@ -370,4 +778,43 @@ main#home h1 {
   .projects {
     grid-template-columns: 1fr;
   }
+  .uiux .items {
+    padding: 1em;
+  }
+
+  .vector img {
+    width: 390px;
+    padding: 4em;
+  }
+  
+
+  .persona {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: -3em;
+    margin-left: -5em;
+    margin-right: -5em;
+  }
+  .journey img {
+    width: 100%;
+  }
+  .interface img {
+    width: 100%;
+  }
+  .timeline div {
+    display: inline;
+    padding: 1em;
+  }
+  .video video {
+    width: 150px;
+    padding: 2em;
+  }
+  .shupa img {
+    padding: 0em;
+  }
+  .fullbody {
+    padding: 0 3em;
+  }
+ 
+  
 }
