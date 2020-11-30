@@ -128,7 +128,8 @@ body {
   line-height: 1.5;
 }
 body#bg-img {
-  background: url(../img/Study.JPG);
+  /* background: url(../img/Maynooth/Web-Showcase-Project-Presentation.jpg); */
+  background: url(../img/background\ 2.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -138,7 +139,7 @@ body#bg-img:after {
   top: 0;
   right: 0;
   width: 100%;
-  height: 120%;
+  height: 100%;
   z-index: -1;
   background: rgba(68, 68, 68, 0.9);
 }
@@ -148,7 +149,7 @@ body#bg-img:after {
   top: 0;
   right: 0;
   width: 100%;
-  height: 193%;
+  height: 200%;
   z-index: -1;
   background: rgba(68, 68, 68, 0.9);
 }
@@ -221,7 +222,7 @@ main#home h1 {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 25px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(2, 1fr);
 }
@@ -251,7 +252,6 @@ main#home h1 {
   border-bottom: #69c2c2 5px solid;
 }
 
-
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -269,8 +269,8 @@ main#home h1 {
 }
 
 .uiux img {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border: 3px #fff solid;
 }
 
@@ -309,10 +309,10 @@ main#home h1 {
 }
 
 .slides img {
-  width: 60%;
+  width: 80%;
 }
 .sitemap img {
-  width: 70%;
+  width: 90%;
 }
 .shuflow img {
   width: 90%;
@@ -393,7 +393,7 @@ main#home h1 {
   grid-template-columns: repeat(6, 2fr);
 }
 .sketch img {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -412,17 +412,17 @@ main#home h1 {
   padding-left: -2em;
 }
 
-.savorbody h1,
+.savorchai h1,
 h2 {
   color: #e79f19;
 }
-.savorbody h3,
+.savorchai h3,
 h4 {
   color: #addbd0;
 }
 
-.shupabody h1,
-h2 {
+.shupabody h2,
+h3 {
   color: rgb(174, 127, 236);
 }
 .shupabody h3,
@@ -449,13 +449,6 @@ h4 {
 .hero-study img {
   width: 100%;
 }
-.shupa img {
-  height: 600px;
-  border: rgba(126, 171, 199, 0.4) solid 2em;
-  border-right: 5em;
-  border-left: 5em;
-  padding: 0 11em 0 11em;
-}
 
 /* .savor,
 .concept,
@@ -470,7 +463,6 @@ h4 {
   text-indent: 1em;
 }
 
-
 .timeline {
   text-align: center;
 }
@@ -479,12 +471,15 @@ h4 {
 }
 .play div img {
   width: 100%;
-} 
+}
 .shubox2,
 .shuwireframe,
 .shumap,
 .post-pal img {
-  width: 70%;
+  width: 75%;
+}
+.shupabody img {
+  width: 100%;
 }
 .study-final img {
   width: 100%;
@@ -501,6 +496,19 @@ h4 {
   color: white;
 }
 
+.job h3 {
+  color: rgb(251, 255, 255);
+}
+.figma-final {
+  width: 100%;
+}
+.shupa-video video {
+  width: 30%;
+}
+.journey .wireframe,
+.sketch img {
+  width: 100%;
+}
 @media (min-width: 1700px) {
   .person div {
     display: grid;
@@ -513,7 +521,6 @@ h4 {
     display: flex;
     justify-self: center;
     padding-left: 8em;
-    width: 80%;
   }
   .journey div {
     padding-left: 4em;
@@ -524,10 +531,10 @@ h4 {
   .shupa img {
     height: 44em;
   }
-  .fullbody div{
+  .fullbody div {
     margin: 0 4em;
   }
- 
+
   .hero-study img {
     height: 44em;
   }
@@ -545,10 +552,12 @@ h4 {
     /* border: solid grey; */
   }
   .person {
-    margin: 0 9em 0 9em;
+    /* margin: 0 9em 0 9em; */
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .fullbody, .shupabody {
+  .fullbody,
+  .shupabody {
     margin: 0 13em;
   }
 }
@@ -619,6 +628,14 @@ h4 {
   .fullbody {
     margin: 0 13em;
   }
+  .shupa img {
+    height: 650px;
+    width: 100%;
+    border: rgba(126, 171, 199, 0.4) solid 2em;
+    border-right: 5em;
+    border-left: 5em;
+    padding: 0 11em 0 11em;
+  }
   .shuflow {
     width: 50%;
   }
@@ -633,8 +650,8 @@ h4 {
     font-size: 12px;
   } */
 }
-@media screen and (min-width: 1170px) and (max-width: 1500px){
-  .job img{
+@media screen and (min-width: 1170px) and (max-width: 1500px) {
+  .job img {
     width: 350px;
     height: 250px;
   }
@@ -688,12 +705,16 @@ h4 {
     display: grid;
     grid-template-columns: 60px 60px;
   } */
-  .job img{
-    width: 200px;
+  .job img {
+    width: 220px;
     height: 150px;
   }
   .job {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .items img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -752,7 +773,7 @@ h4 {
   }
   /* .persona {
     display: grid;
-    /* grid-template-columns: repeat(2, minmax(auto, 15em)); */
+    grid-template-columns: repeat(2, minmax(auto, 15em));
     grid-template-columns: 1fr;
     column-gap: -3em;
   } */
@@ -761,6 +782,12 @@ h4 {
   }
   .fullbody {
     margin: 0 4em;
+  }
+  .job img {
+    width: 400px;
+  }
+  .items img {
+    width: 400px;
   }
 }
 
@@ -786,7 +813,6 @@ h4 {
     width: 390px;
     padding: 4em;
   }
-  
 
   .persona {
     display: grid;
@@ -810,11 +836,19 @@ h4 {
     padding: 2em;
   }
   .shupa img {
-    padding: 0em;
+    padding: -3em;
+    width: 600px;
   }
   .fullbody {
-    padding: 0 3em;
+    padding: 0 2em;
   }
- 
-  
+  .job img {
+    width: 280px;
+  }
+  .job {
+    font-size: 9px;
+  }
+  .items img {
+    width: 350px;
+  }
 }
